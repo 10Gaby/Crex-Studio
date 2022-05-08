@@ -331,6 +331,12 @@ footer {
 }
 
 @media screen and (max-width: 780px) {
+  .games {
+    margin: 20px;
+  }
+  .img-slider {
+    width: 300px;
+  }
   .portada {
     margin: 10px;
   }
