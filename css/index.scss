@@ -340,8 +340,12 @@ footer{
 }
 
 @media screen and (max-width: 780px){
+  .global-swiper-slide{
+    margin: 0;
+  }
+  
   .games{
-    margin: 20px;
+    margin: 30px;
   }
 
   .img-slider{
