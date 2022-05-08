@@ -157,7 +157,7 @@ body {
     padding: 10px 25px;
   }
   .img-slider .slide .info h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
   .img-slider .slide .info p {
     width: 70%;
@@ -332,6 +332,11 @@ footer {
 
 @media screen and (max-width: 780px) {
   .global-swiper-slide {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0;
   }
   .games {
