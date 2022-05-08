@@ -331,8 +331,11 @@ footer {
 }
 
 @media screen and (max-width: 780px) {
+  .portada {
+    margin: 10px;
+  }
   .portada img {
-    width: 400px;
+    width: 300px;
   }
   .sect1 {
     -ms-grid-columns: 100%;
@@ -341,6 +344,23 @@ footer {
   .sub-creadores {
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
+  }
+  footer {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .footer1 {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
+  .footer2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=index.css.map */

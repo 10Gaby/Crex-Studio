@@ -340,8 +340,11 @@ footer{
 }
 
 @media screen and (max-width: 780px){
+  .portada{
+    margin: 10px;
+  }
   .portada img{
-    width: 400px;
+    width: 300px;
   }
   .sect1{
     grid-template-columns: 100%;
@@ -349,5 +352,17 @@ footer{
 
   .sub-creadores{
     grid-template-columns: 50% 50%;
+  }
+  
+  footer{
+    grid-template-columns: 100%;
+  }
+  .footer1{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .footer2{
+    justify-content: center;
   }
 }
