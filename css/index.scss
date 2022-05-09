@@ -222,6 +222,53 @@ body{
     }
   }
 
+//Reliquias
+
+.game{
+  display: grid;
+  justify-content: center;
+  align-content:flex-end;
+}
+
+.games h3{
+  font-weight: bolder;
+  font-size: 2em;
+  text-align: center;
+}
+
+.games p{
+  margin: 10px;
+}
+
+.game{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 350px;
+  margin-right: 30px;
+  padding: 20px;
+}
+
+.game a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 8px 50px;
+  margin-top: 10px;
+}
+
+.game a:hover{
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+}
+
+.game:hover{
+  box-shadow: rgb(255, 255, 255) 0.2em 0.2em 0.8em;
+  transform: translateY(-15px);
+  transition: 1s;
+}
 
 //Slider2
 
@@ -261,13 +308,20 @@ body{
   object-fit: cover;
 }
 
-#slide1{
-  background-image: url(../img/Control.jpg);
+@mixin fondo {
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+#slide1{
+  background-image: url(../img/Control.jpg);
+  @include fondo;
+}
 
+#slide2{
+  background-image: url(../img/Control2.jpg);
+  @include fondo;
+}
 
 //Integrantes
 
