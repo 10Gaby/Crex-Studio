@@ -264,6 +264,9 @@ footer {
   .img-slider {
     width: 600px;
   }
+  #sw1 {
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -271,7 +274,7 @@ footer {
     width: 400px;
   }
   .creadores img {
-    width: 150px;
+    width: 130px;
   }
 }
 
@@ -320,6 +323,9 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .creadores img {
+    width: 100px;
   }
 }
 /*# sourceMappingURL=index.css.map */
