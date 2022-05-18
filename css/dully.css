@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1b1b1b;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+.portada {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/Dully/Portada\ 1.png);
+  background-size: cover;
+  display: grid;
+  display: grid;
+  justify-content: right;
+}
+
+.portada > div{
+  background-color: rgba(0, 0, 0, .4);
+  width: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: 50px;
+  color: white;
+  padding: 30px;
+}
+
+.portada > div h1{
+  font-size: 50px;
+}
+
+/*Personajes Principales*/
+
+.sect1{
+  margin: 50px 0;
+}
+
+.sect1 h2{
+  text-align: center;
+}
+
+.sect1-1{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  text-align: center;
+} 
+
+.sect1 img{
+  width: 300px;
+}
+
+@media screen and (max-width: 1080px){
+  .portada {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    justify-content: center;
+  }
+  
+  .portada > div{
+    width: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0px;
+    padding: 20px;
+  }
+  
+  .portada > div h1{
+    font-size: 50px;
+  }
+
+  .sect1-1{
+    grid-template-columns: 50% 50%;
+  } 
+}
+
+@media screen and (max-width: 920px){
+  .sect1 img{
+    width: 200px;
+  }
+
+  .portada > div{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0px;
+    padding: 0px;
+  }
+}
