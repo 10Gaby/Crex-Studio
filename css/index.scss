@@ -200,6 +200,26 @@ body{
   @include fondo;
 }
 
+#slide2-3{
+  background-image: url(../img/De-camara1.jpg);
+  @include fondo;
+  background-position: 10% 20%;
+}
+
+#slide2-4{
+  background-image: url(../img/De-camara2.jpg);
+  @include fondo;
+  background-position: 10% 20%;
+}
+
+#slide2-5{
+  background-image: url(../img/De-camara3.jpg);
+  @include fondo;
+  background-position: 10% 20%;
+}
+
+
+
 //Integrantes
 
 .sub-title{

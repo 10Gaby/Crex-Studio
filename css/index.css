@@ -202,6 +202,27 @@ body {
   background-size: cover;
 }
 
+#slide2-3 {
+  background-image: url(../img/De-camara1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10% 20%;
+}
+
+#slide2-4 {
+  background-image: url(../img/De-camara2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10% 20%;
+}
+
+#slide2-5 {
+  background-image: url(../img/De-camara3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10% 20%;
+}
+
 .sub-title {
   color: white;
   text-align: center;
