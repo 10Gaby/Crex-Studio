@@ -35,25 +35,220 @@ body {
   font-size: 50px;
 }
 
-/*Personajes Principales*/
+/*sect1*/
 
 .sect1{
-  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 100px 0;
+  width: 95%;
+  margin: 0 auto;
 }
 
-.sect1 h2{
+.sect1 p{
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+.sect1-1, iframe{
+  margin: 0px 20px;
+}
+
+/*Personajes Principales*/
+
+
+/* card flip animation */
+
+.title2{
   text-align: center;
+  margin-bottom: 80px;
 }
 
-.sect1-1{
+.sect2{
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  text-align: center;
-} 
+  gap: 1%;
 
-.sect1 img{
-  width: 300px;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
+
+.flip-card {
+  background-color: transparent;
+  perspective: 3000px;
+  /* Genera un efecto 3D */
+  height: 480px;
+  width: 300px;
+  /* Es necesario una altura para que aparezca en la página */
+  border: 0px;
+  /*Elimina el borde predeterminado que tienen las tajetas en Bootstrap */
+
+}
+
+/* Este contenedor nos posiciona los dos lados de la tarjeta */
+.flip-card-inner {
+  position: relative;
+  /* dejamos que la grid de bootstrap posicione la tarjeta */
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  /* duracion de la animacion */
+  transform-style: preserve-3d;
+}
+
+/* Crea la animación para girar la tarjeta de forma horizontal cuando el ratón se pone encima*/
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Estructura básica de las dos caras */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  /* necesario para posicionar las dos caras a la misma altura */
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /* nos genera una sombra */
+  box-shadow: 10px 10px 28px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+}
+
+/* Estructura específica de la cara frontal */
+.flip-card-front { 
+    width: 100%;
+  /* Ajusta la imagen al tamaño de la tarjeta para hacerla adaptable*/
+  /* Mascara para oscurecer la imagen y que se pueda ver el titulo */
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.flip-card-front .mask {
+  position: absolute;
+  /* hacemos que ocupe toda la imagen */
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* color de la mascara */
+  /* redondeamos la mascara para que se ajuste a la imagen */
+  border-radius: 0.5rem;
+  /* Posición del título en la parte frontal de la tarjeta */
+}
+
+.flip-card-front .mask .align-end {
+  position: absolute;
+  top: 85%;
+  left: 20px;
+  color: #fafafa;
+  font-size: 1.5em;
+}
+
+/* Estructura específica de la cara trasera */
+.flip-card-back {
+  background-color: white;
+  color: #8c8c8c;
+  border: 1px solid #8c8c8c;
+  transform: rotateY(180deg);
+
+  /* Ajusta la altura del texto al centro de la tarjeta */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-body{
+    padding: 30px;
+}
+
+/*Finaliza card flip animation */
+
+/*Inicia Slide 1*/
+
+.sect3{
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.sect3 h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#sw1 {
+  width: 90%;
+  height: 300px;
+  color: white;
+}
+
+#sw1 img{
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.swiper-slide > div{
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  padding: 20px;
+}
+
+.swiper-slide > div h2{
+  text-align: left;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#sw2 {
+  width: 90%;
+  height: 500px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+#sw2 img{
+  width: 100%;
+}
+
+/*sect4*/
+
+
+
+/*RESPONSIVE*/
 
 @media screen and (max-width: 1080px){
   .portada {
@@ -76,13 +271,13 @@ body {
     font-size: 50px;
   }
 
-  .sect1-1{
+  .sect2-1{
     grid-template-columns: 50% 50%;
   } 
 }
 
 @media screen and (max-width: 920px){
-  .sect1 img{
+  .sect2 img{
     width: 180px;
   }
 
