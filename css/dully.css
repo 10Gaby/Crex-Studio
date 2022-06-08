@@ -54,6 +54,11 @@ body {
   margin: 0px 20px;
 }
 
+iframe{
+  width: 90%;
+  height: 400px;
+}
+
 /*Personajes Principales*/
 
 
@@ -126,6 +131,8 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 0.5rem;
+  display: block;
+  margin: 0 auto;
 }
 
 .flip-card-front .mask {
@@ -244,8 +251,28 @@ body {
   width: 100%;
 }
 
-/*sect4*/
+/*Footer*/
 
+ion-icon{
+  color: white;
+  font-size: 50px;
+}
+
+footer{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 30px;
+}
+
+.footer1 img{
+  width: 200px;
+}
+
+.footer2{
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
 
 
 /*RESPONSIVE*/
@@ -274,6 +301,15 @@ body {
   .sect2-1{
     grid-template-columns: 50% 50%;
   } 
+  .sect2{
+    grid-template-columns: 50% 50%;
+    margin-bottom: 20px;
+  }
+  .sect3{
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 100px;
+  }
 }
 
 @media screen and (max-width: 920px){
@@ -288,5 +324,33 @@ body {
     align-content: center;
     margin: 0px;
     padding: 0px;
+  }
+
+  .sect1{
+    grid-template-columns: 100%;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .sect2{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  footer{
+    grid-template-columns: 100%;
+  }
+  .footer1{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .footer2{
+    justify-content: center;
+  }
+  .creadores img{
+    width: 100px;
   }
 }
